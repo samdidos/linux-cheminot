@@ -1,7 +1,7 @@
 FROM fedora
 
-RUN dnf update && \
-    dnf install -y icedtea-web
+RUN dnf update -y
+RUN dnf install -y icedtea-web
 
 ADD https://cheminotjws.etsmtl.ca/ChemiNot.jnlp /opt/ChemiNot.jnlp
 
